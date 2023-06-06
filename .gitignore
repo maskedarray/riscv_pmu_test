@@ -1,0 +1,10 @@
+*
+!.gitignore
+!main.c
+!commmon.mk
+!Makefile
+!setup.sh
+!*/vscode/*
+!*/common/*
+!*/inc/*
+!elf_to_slm.py
