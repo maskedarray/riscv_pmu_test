@@ -8,6 +8,6 @@ export RISCV=/opt/riscv64
 
 export SW_HOME=.
 
-alias rip="riscv64-unknown-elf-gdb hello.riscv | tee"
+alias rip="riscv64-unknown-elf-gdb main.elf | tee"
 
 

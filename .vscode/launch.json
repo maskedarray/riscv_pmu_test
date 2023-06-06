@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "RISC-V GDB Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.elf",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/opt/riscv-cva6/bin/riscv64-unknown-elf-gdb",
+            "setupCommands": [
+                {
+                    "description": "connect to remote",
+                    "text": "target remote localhost:3333",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "connect to remote",
+                    "text": "symbol-file ./main.elf",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "load",
+                    "text": "monitor reset halt",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}

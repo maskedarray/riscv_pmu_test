@@ -1,10 +1,13 @@
-*
+/*
 !.gitignore
 !main.c
 !commmon.mk
 !Makefile
 !setup.sh
-!*/vscode/*
-!*/common/*
-!*/inc/*
+!/.vscode/
+!/.vscode/**
+!common/
+!common/**
+!inc/
+!inc/**
 !elf_to_slm.py
