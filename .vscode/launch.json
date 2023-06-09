@@ -15,19 +15,30 @@
             "setupCommands": [
                 {
                     "description": "connect to remote",
-                    "text": "target remote localhost:3333",
-                    "ignoreFailures": true
+                    "text": "target remote:3333",
+                    "ignoreFailures": false
                 },
                 {
                     "description": "connect to remote",
                     "text": "symbol-file ./main.elf",
-                    "ignoreFailures": true
+                    "ignoreFailures": false
+                },
+                {
+                    "description": "reset halt",
+                    "text": "monitor reset halt",
+                    "ignoreFailures": false
                 },
                 {
                     "description": "load",
-                    "text": "monitor reset halt",
-                    "ignoreFailures": true
+                    "text": "load main.elf",
+                    "ignoreFailures": false
+                },
+                {
+                    "description": "break main",
+                    "text": "break main",
+                    "ignoreFailures": false
                 }
+                
             ]
         }
     ],

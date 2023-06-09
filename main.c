@@ -20,11 +20,11 @@ int main(int argc, char const *argv[]) {
 
   #ifdef FPGA_EMULATION
   int baud_rate = 9600;
-  int test_freq = 100000000;
+  int test_freq = 50000000;
   #else
   set_flls();
   int baud_rate = 115200;
-  int test_freq = 100000000;
+  int test_freq = 50000000;
   #endif  
   uart_set_cfg(0,(test_freq/baud_rate)>>4);
 
